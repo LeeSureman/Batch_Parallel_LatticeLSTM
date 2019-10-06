@@ -47,7 +47,7 @@
 + fitlog >= 0.2.0
 
 ## Dataset：
-+ Resume，downloaded from[here](https://github.com/jiesutd/LatticeLSTM)
++ Resume，downloaded from [here](https://github.com/jiesutd/LatticeLSTM)
 + Ontonote
 + [Weibo](https://github.com/hltcoe/golden-horse)
 
