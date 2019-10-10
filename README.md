@@ -56,7 +56,7 @@ to those unincluded dataset, you can write the interface function whose output f
 ## Performance：
 |Dataset|F1 of my code(test)|F1 in paper(test)|
 |:----:|:----:|:----:|
-|Weibo|62.73|58.79|
+|Weibo|58.66|58.79|
 |Resume|95.18|94.46|
 |Ontonote|73.62|73.88|
 
