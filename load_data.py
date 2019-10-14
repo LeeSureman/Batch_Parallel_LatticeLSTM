@@ -501,7 +501,7 @@ def load_weibo_ner_old(path,unigram_embedding_path=None,bigram_embedding_path=No
 @cache_results(_cache_fp='weiboNER uni+bi', _refresh=False)
 def load_weibo_ner(path,unigram_embedding_path=None,bigram_embedding_path=None,index_token=True,
                    normlize={'char':True,'bigram':True,'word':False}):
-    from fastNLP.io.data_loader import ConllLoader
+    from fastNLP.io.loader import ConllLoader
     from utils import get_bigrams
 
     loader = ConllLoader(['chars','target'])
@@ -574,7 +574,7 @@ def load_weibo_ner(path,unigram_embedding_path=None,bigram_embedding_path=None,i
 @cache_results(_cache_fp='cache/ontonotes4ner',_refresh=False)
 def load_ontonotes4ner(path,char_embedding_path=None,bigram_embedding_path=None,index_token=True,
                        normalize={'char':True,'bigram':True,'word':False}):
-    from fastNLP.io.data_loader import ConllLoader
+    from fastNLP.io.loader import ConllLoader
     from utils import get_bigrams
 
     train_path = os.path.join(path,'train.char.bmes')

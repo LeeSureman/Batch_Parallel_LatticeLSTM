@@ -12,8 +12,8 @@ import torch
 import sys
 from utils_ import LatticeLexiconPadder,SpanFPreRecMetric_YJ
 from fastNLP import Tester
-import fitlog
-from fastNLP.core.callback import FitlogCallback
+# import fitlog
+# from fastNLP.core.callback import FitlogCallback
 from utils import set_seed
 import os
 from fastNLP import LRScheduler
@@ -50,7 +50,7 @@ fit_msg_list = [args.model,'bi' if args.bi else 'uni',str(args.batch)]
 if args.model == 'lattice':
     fit_msg_list.append(str(args.skip_before_head))
 fit_msg = ' '.join(fit_msg_list)
-fitlog.commit(__file__,fit_msg=fit_msg)
+# fitlog.commit(__file__,fit_msg=fit_msg)
 
 device = torch.device(args.device)
 for k,v in args.__dict__.items():
@@ -101,7 +101,7 @@ elif args.dataset == 'weibo_old':
 if args.gaz_dropout < 0:
     args.gaz_dropout = args.embed_dropout
 
-fitlog.add_hyper(args)
+# fitlog.add_hyper(args)
 w_list = load_yangjie_rich_pretrain_word_list(yangjie_rich_pretrain_word_path,
                                               _refresh=refresh_data)
 
@@ -187,7 +187,7 @@ elif args.optim == 'sgd':
 
 
 callbacks = [
-    FitlogCallback({'test':datasets['test'],'train':datasets['train']}),
+    # FitlogCallback({'test':datasets['test'],'train':datasets['train']}),
     LRScheduler(lr_scheduler=LambdaLR(optimizer, lambda ep: 1 / (1 + 0.03)**ep))
 ]
 print('label_vocab:{}\n{}'.format(len(vocabs['label']),vocabs['label'].idx2word))
