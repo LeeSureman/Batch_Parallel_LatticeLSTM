@@ -93,7 +93,7 @@ def load_sst2(dict_path,embedding_path=None):
 
 @cache_results(_cache_fp='OntonotesPOS', _refresh=False)
 def load_conllized_ontonote_POS(path,embedding_path=None):
-    from fastNLP.io.data_loader import ConllLoader
+    from fastNLP.io.loader import ConllLoader
     header2index = {'words':3,'POS':4,'NER':10}
     headers = ['words','POS']
 
@@ -419,7 +419,7 @@ def load_conllized_ontonote_pkl_yf(path):
 @cache_results(_cache_fp='weiboNER old uni+bi', _refresh=False)
 def load_weibo_ner_old(path,unigram_embedding_path=None,bigram_embedding_path=None,index_token=True,
                   normlize={'char':True,'bigram':True,'word':False}):
-    from fastNLP.io.data_loader import ConllLoader
+    from fastNLP.io.loader import ConllLoader
     from utils import get_bigrams
 
     loader = ConllLoader(['chars','target'])
@@ -647,7 +647,7 @@ def load_ontonotes4ner(path,char_embedding_path=None,bigram_embedding_path=None,
 @cache_results(_cache_fp='cache/resume_ner',_refresh=False)
 def load_resume_ner(path,char_embedding_path=None,bigram_embedding_path=None,index_token=True,
                     normalize={'char':True,'bigram':True,'word':False}):
-    from fastNLP.io.data_loader import ConllLoader
+    from fastNLP.io.loader import ConllLoader
     from utils import get_bigrams
 
     train_path = os.path.join(path,'train.char.bmes')

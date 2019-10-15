@@ -33,7 +33,7 @@ parser.add_argument('--skip_before_head',default=False)#in paper it's false
 parser.add_argument('--hidden',default=113)
 parser.add_argument('--momentum',default=0)
 parser.add_argument('--bi',default=True)
-parser.add_argument('--dataset',default='weibo',help='resume|ontonote|weibo|msra')
+parser.add_argument('--dataset',default='resume',help='resume|ontonote|weibo|msra')
 parser.add_argument('--use_bigram',default=True)
 
 parser.add_argument('--embed_dropout',default=0.5)
