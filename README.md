@@ -4,7 +4,7 @@
 # 支持批并行的LatticeLSTM
 + 原论文：https://arxiv.org/abs/1805.02023
 + 在batch=10时，计算速度已明显超过[原版代码](https://github.com/jiesutd/LatticeLSTM)。
-+ 在main.py中添加三个embedding的文件路径以及对应数据集的路径即可运行
++ 在main.py中添加三个embedding的文件路径以及对应数据集的路径即可运行（原文中用的embedding文件下载路径请见https://github.com/jiesutd/LatticeLSTM）
 + 此代码集合已加入fastNLP
 
 ## 运行环境：
@@ -36,7 +36,7 @@
 # Batch Parallel LatticeLSTM
 + paper：https://arxiv.org/abs/1805.02023
 + when batch is 10，the computation efficiency exceeds that of [original code](https://github.com/jiesutd/LatticeLSTM)。
-+ set the path of embeddings and corpus before you run main.py
++ set the path of embeddings and corpus before you run main.py. You can get 3 embeddings in https://github.com/jiesutd/LatticeLSTM
 + this code set has been added to fastNLP
 
 ## Environment：
