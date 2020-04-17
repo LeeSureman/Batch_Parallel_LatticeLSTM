@@ -22,7 +22,7 @@
 ## 性能：
 |数据集| 目前达到的F1分数(test)|原文中的F1分数(test)|
 |:----:|:----:|:----:|
-|Weibo|58.66|58.79|
+|Weibo|58.66(可能有误)|58.79|
 |Resume|95.18|94.46|
 |Ontonote|73.62|73.88|
 
@@ -56,7 +56,7 @@ to those unincluded dataset, you can write the interface function whose output f
 ## Performance：
 |Dataset|F1 of my code(test)|F1 in paper(test)|
 |:----:|:----:|:----:|
-|Weibo|58.66|58.79|
+|Weibo|58.66(maybe wrong)|58.79|
 |Resume|95.18|94.46|
 |Ontonote|73.62|73.88|
 
